@@ -9,7 +9,7 @@
 
     <!--recycler view to display our chats-->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVChats"
+        android:id="@+id/idChats"
         android:layout_width="match_parent"
         android:layout_height="590dp"
         android:padding="15dp"
@@ -30,11 +30,11 @@
             android:layout_width="302dp"
             android:layout_height="64dp"
             android:layout_centerInParent="true"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toStartOf="@+id/idFabSend"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/idSend"
             android:autofillHints=""
             android:background="@drawable/background"
             android:hint="@string/message"
@@ -43,14 +43,15 @@
             android:padding="20dp"
             android:singleLine="true"
             android:textColor="@color/teal_200"
-            android:textColorHint="@color/teal_200"
+            android:textColorHint="#00838F"
             android:visibility="visible"
+            tools:ignore="TextContrastCheck"
             tools:visibility="visible" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/idFabSend"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:id="@+id/idSend"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="45dp"
             android:layout_marginTop="45dp"
@@ -59,9 +60,10 @@
             android:contentDescription="@android:string/unknownName"
             android:src="@drawable/ic_send"
             android:visibility="visible"
-            app:backgroundTint="@color/fab_color"
+            app:backgroundTint="@color/teal_200"
             app:fabCustomSize="45dp"
             app:tint="@color/white"
+            tools:ignore="ImageContrastCheck"
             tools:visibility="visible" />
 
     </RelativeLayout>

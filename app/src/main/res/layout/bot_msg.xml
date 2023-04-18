@@ -3,10 +3,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="end"
-    android:layout_margin="10dp"
-    android:elevation="10dp"
-    app:cardBackgroundColor="@color/user_back_color"
+    android:layout_gravity="start"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="@color/teal_700"
     app:cardCornerRadius="8dp">
 
     <LinearLayout
@@ -14,25 +14,31 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!--text view for displaying user message-->
+        <!--below widget is for
+        displaying message of bot-->
         <TextView
-            android:id="@+id/idTVUser"
+            android:id="@+id/idBot"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:autoLink="all"
             android:padding="10dp"
-            android:text="@string/user_message"
+            android:text="@string/bot_message"
             android:textColor="@color/white" />
 
-        <!--we are displaying user icon-->
+        <!--below widget is for image of bot-->
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:contentDescription="@string/user_image"
+            android:contentDescription="@string/bot_image"
             android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_user" />
+            android:src="@drawable/ic_bot"
+            />
 
     </LinearLayout>
 
